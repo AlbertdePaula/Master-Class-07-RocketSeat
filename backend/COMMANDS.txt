@@ -10,3 +10,6 @@ tsconfig.json
 Habilitar ("esModuleInterop": true) para utilizar importação do default no express;
 Define a pasta destino para arquivo .js tranpilado do .ts"outDir": "./dist";
 
+package.json
+  "scripts": {
+    "dev:sever": "ts-node-dev --respawn --transpile-only"
