@@ -1,0 +1,12 @@
+mkdir: Criar pastas;
+yarn init -y: Inicia projeto
+yarn add @types/express: Adiciona o pacote de tipagem do express;
+yarn tsc src/index.ts: Direciona a compilação do arquivo index.ts para index.js;
+yarn tsc --init: Cria arquivo de configuração tsConfig.json;
+node *diretorio do arquivo*: Roda o arquivo .js
+yarn tsc: Gera o arquivo .js tranpilado
+
+tsconfig.json
+Habilitar ("esModuleInterop": true) para utilizar importação do default no express;
+Define a pasta destino para arquivo .js tranpilado do .ts"outDir": "./dist";
+
