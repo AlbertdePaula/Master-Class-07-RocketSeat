@@ -1,15 +1,20 @@
 mkdir: Criar pastas;
 yarn init -y: Inicia projeto
+npm install -D yarn: Instala o yarn em modo developer;
 yarn add @types/express: Adiciona o pacote de tipagem do express;
-yarn tsc src/index.ts: Direciona a compilação do arquivo index.ts para index.js;
+yarn tsc src/index.ts: Direciona a transpilação do arquivo index.ts para index.js;
 yarn tsc --init: Cria arquivo de configuração tsConfig.json;
-node *diretorio do arquivo*: Roda o arquivo .js
-yarn tsc: Gera o arquivo .js tranpilado
+node *diretorio do arquivo*: Roda o arquivo .js;
+yarn tsc: Gera o arquivo .js transpilado;
 
 tsconfig.json
-Habilitar ("esModuleInterop": true) para utilizar importação do default no express;
-Define a pasta destino para arquivo .js tranpilado do .ts"outDir": "./dist";
+  Habilitar ("esModuleInterop": true) para utilizar importação do default no express;
+  Define a pasta destino para arquivo .js tranpilado do .ts"outDir": "./dist";
 
 package.json
   "scripts": {
-    "dev:sever": "ts-node-dev --respawn --transpile-only"
+    "dev:server": "ts-node-dev --respawn --transpile-only"
+
+PowerShell
+  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser: Habilitar execução de scripts no Windows;
+  
